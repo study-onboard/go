@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch02.BooleanType()
+  ch02.StringType()
 }
 
