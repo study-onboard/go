@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch02.UsingConst()
+  ch02.TypeAlias()
 }
 
