@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch02.StringType()
+  ch02.TypeConvert()
 }
 
