@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch02.TypeConvert()
+  ch02.UsingConst()
 }
 
