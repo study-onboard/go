@@ -1,9 +1,9 @@
 package main
 
 import (
-	ch04 "sanlea/study/ch04"
+	"sanlea/study/ch05"
 )
 
 func main() {
-	ch04.BreakContinueStatement()
+	ch05.AnonymousFunction()
 }
