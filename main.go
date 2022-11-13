@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch05.ImplementInterface()
+	ch05.UsingClosure()
 }
