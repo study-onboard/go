@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch03.UsingSyncMap()
+	ch03.UsingList()
 }
