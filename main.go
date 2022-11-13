@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch04.UsingCondition()
+	ch04.ConditionStatement()
 }

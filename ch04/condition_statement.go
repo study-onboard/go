@@ -2,7 +2,7 @@ package ch04
 
 import "fmt"
 
-func UsingCondition() {
+func ConditionStatement() {
 	if content, error := requestSapi(true); error != nil {
 		fmt.Printf("request sapi error: %s\n", *error)
 	} else {
@@ -13,7 +13,6 @@ func UsingCondition() {
 	} else {
 		fmt.Printf("request sapi success: %s\n", *content)
 	}
-
 }
 
 func requestSapi(t bool) (*string, *string) {
