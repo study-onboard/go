@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch03.UsingArray()
+  ch03.UsingSlice()
 }
 
