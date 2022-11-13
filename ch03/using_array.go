@@ -7,7 +7,7 @@ func UsingArray() {
   members[0] = "show me the money"
   members[1] = "how do you turn this on"
   members[2] = "good good study, day day up"
-  iterateMembers(members)
+  dumpMembers(members)
 
   // initialize method 1
   members = [3]string {
@@ -15,17 +15,42 @@ func UsingArray() {
     "Lana Chang",
     "Qing Zhang",
   }
-  iterateMembers(members)
+  dumpMembers(members)
 
+  // initialize method 2
   members = [...]string {
     "Jucylee",
     "Bowen",
     "Ray",
   }
-  iterateMembers(members)
+  dumpMembers(members)
+
+  org := [3]string {
+    "Kut Zhang",
+    "Lana Chang",
+    "Qing Zhang",
+  }
+  fmt.Printf("org == members: %t\n", org == members)
+
+  org = [3]string {
+    "Jucylee",
+    "Bowen",
+    "Ray",
+  }
+  fmt.Printf("org == members: %t\n", org == members)
+
+  // wrong syntax of arrays
+  // ----------------------------------------------------
+  // managers := [4]string {
+  //   "Lana",
+  //   "Lucy",
+  //   "Lily",
+  //   "Magick",
+  // }
+  // fmt.Printf("org == managers: %t\n", managers == org)
 }
 
-func iterateMembers(members [3]string) {
+func dumpMembers(members [3]string) {
   fmt.Println("---------------------------------------------------")
   for index, member := range members {
     fmt.Printf("%d: %s\n", index, member)
