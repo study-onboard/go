@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch05.UsingClosure()
+	ch05.UsingVariadicFunction()
 }
