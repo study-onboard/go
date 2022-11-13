@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch02.TypeAlias()
+  ch02.TypeConvert()
 }
 
