@@ -1,11 +1,11 @@
 package main
 
 import (
-	ch02 "sanlea/study/ch02"
+	ch03 "sanlea/study/ch03"
 )
 
 
 func main()  {
-  ch02.TypeConvert()
+  ch03.UsingArray()
 }
 
