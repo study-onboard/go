@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch04.SwitchStatement()
+	ch04.BreakContinueStatement()
 }
