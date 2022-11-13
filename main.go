@@ -1,9 +1,9 @@
 package main
 
 import (
-	ch03 "sanlea/study/ch03"
+	ch04 "sanlea/study/ch04"
 )
 
 func main() {
-	ch03.UsingList()
+	ch04.UsingCondition()
 }
