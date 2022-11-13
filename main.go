@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch05.AnonymousFunction()
+	ch05.ImplementInterface()
 }
