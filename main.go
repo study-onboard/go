@@ -4,8 +4,6 @@ import (
 	ch03 "sanlea/study/ch03"
 )
 
-
-func main()  {
-  ch03.UsingMap()
+func main() {
+	ch03.UsingSyncMap()
 }
-
