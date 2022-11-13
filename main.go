@@ -6,6 +6,6 @@ import (
 
 
 func main()  {
-  ch03.UsingSlice()
+  ch03.UsingMultipleGroupsSlice()
 }
 
