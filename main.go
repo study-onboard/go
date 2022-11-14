@@ -1,9 +1,9 @@
 package main
 
 import (
-	"sanlea/study/ch02"
+	"sanlea/study/ch07"
 )
 
 func main() {
-	ch02.StringType()
+	ch07.CheckInterface()
 }

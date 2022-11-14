@@ -7,16 +7,20 @@ import (
 )
 
 func CheckInterface() {
-	case1()
+	context := prepare()
+
+	case1(context)
 	fmt.Println("-------------------------------------------------------------------------")
+
 	case2()
+	fmt.Println("-------------------------------------------------------------------------")
+
+	case3(context)
 }
 
 // ---------------------------------------------------------------------------------------------
 
-func case1() {
-	context := prepare()
-
+func case1(context map[string]any) {
 	mode, ok := context["mode"].(*string)
 	if ok {
 		fmt.Printf("Application runtime mode: %s\n", *mode)
@@ -79,4 +83,16 @@ type ConfigError struct {
 
 func (err *ConfigError) Error() string {
 	return "Could not read configs from server."
+}
+
+// ---------------------------------------------------------------------------------------------
+
+func case3(context map[string]any) {
+	modePtr := context["mode"].(*string)
+	mode := *modePtr
+	fmt.Printf("Mode: %s\n", mode)
+
+	timesPtr := context["times"].(*int)
+	times := *timesPtr
+	fmt.Printf("Times: %d\n", times)
 }
