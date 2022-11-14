@@ -1,9 +1,10 @@
 package ch07
 
 import (
-	"io/ioutil"
+	"fmt"
 	"log"
 	"net/http"
+	"os"
 )
 
 func BuildWebServer() {
@@ -12,6 +13,9 @@ func BuildWebServer() {
 }
 
 func home(response http.ResponseWriter, request *http.Request) {
-	content, _ := ioutil.ReadFile("./data/index.html")
-	response.Write(content)
+	content, _ := os.ReadFile("./data/index.html")
+	_, err := response.Write(content)
+	if err != nil {
+		fmt.Printf("Can't write any content to the response: %s", err.Error())
+	}
 }

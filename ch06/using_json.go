@@ -23,7 +23,7 @@ func UsingJSON() {
 	fmt.Printf("%s\n", string(jsonText))
 
 	bookClone := new(Book)
-	if err := json.Unmarshal([]byte(jsonText), bookClone); err != nil {
+	if err := json.Unmarshal(jsonText, bookClone); err != nil {
 		fmt.Println(err)
 		return
 	}
