@@ -1,9 +1,9 @@
 package main
 
 import (
-	"sanlea/study/ch06"
+	"sanlea/study/ch07"
 )
 
 func main() {
-	ch06.UsingJSON()
+	ch07.UsingInterface()
 }
