@@ -3,6 +3,14 @@ package ch07
 import "fmt"
 
 func UsingInterface() {
+	way1()
+	fmt.Sprintln("------------------------------------------------------------")
+	way2()
+}
+
+// -- way 1 ---------------------------------------
+
+func way1() {
 	client := &ThirdPartyMessageClient{
 		name:          "UNICON",
 		serverAddress: "https://www.faxxooxxoxoxox.com",
@@ -16,7 +24,6 @@ func UsingInterface() {
 	messageService.Send("Kut Zhang", "Lana Chang", "Show me the money")
 }
 
-// -- define interface ---------------------------------------
 type MessageService interface {
 	// send message
 	Send(sender string, receiver string, message string) error
@@ -51,4 +58,36 @@ func (client *ThirdPartyMessageClient) send(sender string, receiver string, mess
 	fmt.Printf("Sending message from %s to %s: %s\n", sender, receiver, message)
 	fmt.Printf("Message has been sent")
 	return nil
+}
+
+// -- way 2 ------------------------------------------------------
+
+func way2() {
+	var engineCleaner = new(EngineWorker)
+	engineCleaner.kill()
+	engineCleaner.clean()
+}
+
+type EngineCleaner interface {
+	kill()
+	clean()
+}
+
+type Killer struct {
+}
+
+func (killer *Killer) kill() {
+	fmt.Println("Killer killing.............")
+}
+
+type Cleaner struct {
+}
+
+func (cleaner *Cleaner) clean() {
+	fmt.Println("Cleaner cleaning............")
+}
+
+type EngineWorker struct {
+	Killer
+	Cleaner
 }
