@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch05.UsingVariadicFunction()
+	ch05.CalculateArea(100, 200)
 }
