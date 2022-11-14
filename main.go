@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch07.CheckInterface()
+	ch07.BuildWebServer()
 }
