@@ -1,9 +1,9 @@
 package main
 
 import (
-	"sanlea/study/ch05"
+	"sanlea/study/ch06"
 )
 
 func main() {
-	ch05.CalculateArea(100, 200)
+	ch06.UsingStruct()
 }
