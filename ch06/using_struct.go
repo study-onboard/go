@@ -15,6 +15,14 @@ func UsingStruct() {
 
 	structInherideUse()
 	fmt.Println("---------------------------------------------------------")
+
+	leader := newLeader(
+		"Sigma",
+		"Go",
+		"IT Manager",
+		"Code reviewer and team management",
+	)
+	leader.printInfo()
 }
 
 // -----------------------------------------------------------------------
@@ -116,4 +124,53 @@ func newBlackCart(name string, wizardName string) *BlackCat {
 	cat.color = "black"
 	cat.wizardName = wizardName
 	return cat
+}
+
+// -----------------------------------------------------------------------
+
+type Human struct {
+	id   string
+	name string
+}
+
+type Worker struct {
+	department string
+	position   string
+}
+
+type Leader struct {
+	Human
+	Worker
+
+	description string
+}
+
+func newLeader(name, department, position, description string) *Leader {
+	return &Leader{
+		description: description,
+		Worker: Worker{
+			department: department,
+			position:   position,
+		},
+		Human: Human{
+			id:   uuid.NewString(),
+			name: name,
+		},
+	}
+}
+
+func (leader *Leader) printInfo() {
+	fmt.Printf("id: %s\n", leader.id)
+	fmt.Printf("name: %s\n", leader.name)
+	fmt.Printf("department: %s\n", leader.department)
+	fmt.Printf("position: %s\n", leader.position)
+	fmt.Printf("description: %s\n", leader.description)
+
+	fmt.Println("---------------------------------------------------")
+
+	fmt.Printf("id: %s\n", leader.Human.id)
+	fmt.Printf("name: %s\n", leader.Human.name)
+	fmt.Printf("department: %s\n", leader.Worker.department)
+	fmt.Printf("position: %s\n", leader.Worker.position)
+	fmt.Printf("description: %s\n", leader.description)
 }

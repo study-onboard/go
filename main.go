@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch06.UsingStruct()
+	ch06.UsingJSON()
 }
