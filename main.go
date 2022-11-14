@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch07.UsingInterface()
+	ch07.CheckInterface()
 }
