@@ -49,4 +49,21 @@ func StringType() {
 
 	var someText string
 	fmt.Printf("Initialized string value is: `%s`\n", someText)
+
+	fmt.Println("-------------------------------------------------------------------")
+	message1 = "abcd1"
+	message2 = "abcd2"
+	fmt.Printf("message 1: %s\n", message1)
+	fmt.Printf("message 2: %s\n", message2)
+
+	switch {
+	case message1 > message2:
+		fmt.Println("message1 > message2")
+
+	case message1 == message2:
+		fmt.Println("message1 == message2")
+
+	default:
+		fmt.Println("message1 < message2")
+	}
 }
