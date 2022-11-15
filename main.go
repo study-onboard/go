@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch08.UsingTimePackage()
+	ch08.UsingOsPackage()
 }
