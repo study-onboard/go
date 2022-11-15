@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch08.ImportSubpack()
+	ch08.UsingFactory()
 }
