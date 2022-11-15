@@ -1,4 +1,4 @@
-module sanlea/study
+module github.com/study-onboard/go
 
 go 1.19
 

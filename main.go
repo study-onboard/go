@@ -1,7 +1,7 @@
 package main
 
 import (
-	"sanlea/study/ch08"
+	"github.com/study-onboard/go/ch08"
 )
 
 func main() {

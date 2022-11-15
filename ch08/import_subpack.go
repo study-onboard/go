@@ -2,9 +2,9 @@ package ch08
 
 import (
 	"fmt"
-	remote "sanlea/study/ch08/network"
-	"sanlea/study/ch08/protected"
-	_ "sanlea/study/ch08/subpack"
+	remote "github.com/study-onboard/go/ch08/network"
+	"github.com/study-onboard/go/ch08/protected"
+	_ "github.com/study-onboard/go/ch08/subpack"
 )
 
 func ImportSubpack() {
