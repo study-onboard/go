@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch08.UsingRegularExpression()
+	ch08.UsingTimePackage()
 }
