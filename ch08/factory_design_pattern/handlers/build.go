@@ -10,7 +10,7 @@ type BuildJobHandler struct {
 
 func (handler *BuildJobHandler) Handle(job *Job) error {
 	fmt.Printf("BuildJobHandler - buiding for job: %s\n", job)
-	fmt.Printf("BuildJobHandler - job %s built", job)
+	fmt.Printf("BuildJobHandler - job has been built: %s\n", job)
 	return nil
 }
 

@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch08.UsingFactory()
+	ch08.UsingRegularExpression()
 }
