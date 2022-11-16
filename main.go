@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch09.StartGoroutine()
+	ch09.ChannelCommunication()
 }
