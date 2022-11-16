@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/study-onboard/go/ch08"
+	"github.com/study-onboard/go/ch09"
 )
 
 func main() {
-	ch08.WebServer()
+	ch09.StartGoroutine()
 }
